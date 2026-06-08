@@ -8,8 +8,6 @@
 import streamlit as st
 from langchain_openai import ChatOpenAI
 
-st.write(st.secrets)
-
 chat_model = ChatOpenAI(
     api_key=st.secrets["OPENAI_API_KEY"]
 )
