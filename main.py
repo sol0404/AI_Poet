@@ -5,18 +5,15 @@
 #from dotenv import load_dotenv
 #load_dotenv()
 
-import streamlit as st
 from langchain_openai import ChatOpenAI
 
-chat_model = ChatOpenAI(
-    api_key=st.secrets["OPENAI_API_KEY"]
-)
+chat_model = ChatOpenAI()
 
 #subject = "AI"
 #result = chat_model.invoke(subject + "에 대한 시를 써줘.")
 #print(result.content)
 
-
+import streamlit as st
 
 st.title("인공지능 시인")
 
