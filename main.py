@@ -7,7 +7,7 @@
 
 from langchain_openai import ChatOpenAI
 
-chat_model = ChatOpenAI()
+chat_model = ChatOpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 #subject = "AI"
 #result = chat_model.invoke(subject + "에 대한 시를 써줘.")
