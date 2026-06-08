@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import streamlit as st
-
+from langchain_openai import ChatOpenAI
 
 chat_model = ChatOpenAI()
 
@@ -14,7 +14,7 @@ chat_model = ChatOpenAI()
 #result = chat_model.invoke(subject + "에 대한 시를 써줘.")
 #print(result.content)
 
-from langchain_openai import ChatOpenAI
+
 
 st.title("인공지능 시인")
 
